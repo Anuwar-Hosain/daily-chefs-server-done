@@ -10,6 +10,9 @@ app.use(cors());
 app.get("/", (req, res) => {
   res.send("server is running");
 });
+app.get("/get", (req, res) => {
+  res.send("server is rt");
+});
 
 app.get("/data", (req, res) => {
   res.send(data);
